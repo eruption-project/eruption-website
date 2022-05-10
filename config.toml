@@ -1,0 +1,42 @@
+# The URL the site will be built for
+base_url = "https://x3n0m0rph59.github.io/eruption"
+
+theme = "zolastrap"
+
+taxonomies = [
+    # You can enable/disable RSS
+    {name = "categories", rss = true},
+    {name = "tags", rss = true},
+]
+
+vapor_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+]
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+theme = "vapor"
+bg = "dark"
+themes = []
+schemes = []
+
+links = [
+	{title = 'Home', url = '/'},
+	{title = 'Devices', url = '/devices'},
+	{title = 'Gallery', url = '/gallery'},
+	{title = 'About', url = '/about'},
+    {title = 'Docs', url = 'https://github.com/X3n0m0rph59/eruption/tree/master/docs#table-of-contents'},
+]
