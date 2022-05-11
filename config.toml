@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://eruption-website.vercel.app/"
+base_url = "https://eruption-project.org/"
 
 title = "Eruption"
 
