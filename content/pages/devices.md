@@ -5,8 +5,7 @@ slug = "devices"
 paginate_by = 5
 weight = 5
 author = "X3n0m0rph59"
-date = 2022-05-10
-modified = 2022-05-10
+date = 2022-05-11
 +++
 
 ### Keyboard Devices
@@ -68,7 +67,7 @@ Angle snapping: stabilize pointer movement, DCU: Distance Control Unit settings
 
 <div class="spacer-xs"></div>
 
-## Enabling `experimental` drivers
+### Enabling `experimental` drivers
 
 Experimental drivers are `disabled` in the default configuration!
 
@@ -77,3 +76,4 @@ To enable support for experimental drivers, please edit `/etc/eruption/eruption.
 driver_maturity_level = "experimental"
 ```
 
+<div class="spacer-xs"></div>

@@ -4,9 +4,13 @@ path = "about"
 template = "about.html"
 +++
 
-About the Eruption Project
+### About the Eruption Project
 
-![gallery image](img/eruption.jpg)
+<!-- ![logo](/img/eruption.jpg) -->
+
+<div class="spacer-xs"></div>
+
+### License
 
 Eruption is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

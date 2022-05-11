@@ -1,44 +1,48 @@
 +++
-title = "Gallery"
+title = "Screenshots and Videos"
 path = "gallery"
 slug = "gallery"
 paginate_by = 5
 weight = 10
 author = "X3n0m0rph59"
-date = 2022-05-09
-modified = 2022-05-10
+date = 2022-05-11
 +++
 
 <div class="pswp-gallery pswp-gallery--single-column" id="my-gallery">
-  <a href="/img/screenshot-01.png" 
-    data-pswp-width="1492" 
-    data-pswp-height="881" 
+  <h4>Eruption GUI</h4>
+
+  <a href="/img/screenshot-01.png"
+    data-pswp-width="1492"
+    data-pswp-height="881"
     target="_blank">
-    <img src="/img/screenshot-01.png" alt="" />
+    <img src="/img/screenshot-01.png" alt="Eruption GUI - Keyboard devices" />
   </a>
-  <a href="/img/screenshot-02.png" 
-    data-pswp-width="1492" 
-    data-pswp-height="881" 
+  <a href="/img/screenshot-02.png"
+    data-pswp-width="1492"
+    data-pswp-height="881"
     target="_blank">
-    <img src="/img/screenshot-02.png" alt="" />
+    <img src="/img/screenshot-02.png" alt="Eruption GUI - Mouse devices" />
   </a>
- <a href="/img/screenshot-03.png" 
-    data-pswp-width="1492" 
-    data-pswp-height="881" 
+ <a href="/img/screenshot-03.png"
+    data-pswp-width="1492"
+    data-pswp-height="881"
     target="_blank">
-    <img src="/img/screenshot-03.png" alt="" />
+    <img src="/img/screenshot-03.png" alt="Eruption GUI - Process Monitor" />
   </a>
-  <a href="/img/screenshot-profile-switcher-01.jpg" 
-    data-pswp-width="353" 
-    data-pswp-height="546" 
+
+  <h4>Profile Switcher Extension</h4>
+  
+  <a href="/img/screenshot-profile-switcher-01.jpg"
+    data-pswp-width="353"
+    data-pswp-height="546"
     target="_blank">
-    <img src="/img/screenshot-profile-switcher-01.jpg" alt="" />
+    <img src="/img/screenshot-profile-switcher-01.jpg" alt="Profile Switcher" />
   </a>
-  <a href="/img/screenshot-profile-switcher-02.jpg" 
-    data-pswp-width="435" 
-    data-pswp-height="1080" 
+  <a href="/img/screenshot-profile-switcher-02.jpg"
+    data-pswp-width="435"
+    data-pswp-height="1080"
     target="_blank">
-    <img src="/img/screenshot-profile-switcher-02.jpg" alt="" />
+    <img src="/img/screenshot-profile-switcher-02.jpg" alt="Profile Switcher" />
   </a>
   </div>
 </div>

@@ -2,36 +2,49 @@ html {
     // height: 100%;
     width: 100%;
 
-    font-size: 1.5em;
+    font-size: 1.35rem;
 }
 
 body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 
-    hyphens: auto;
-    text-align: justify;
+    hyphens: auto !important;
+    text-align: justify !important;
+    text-align-last: none !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-align: left !important;
 }
 
 img {
     max-width: 98%;
 }
 
+.language-shell {
+  padding: 1.25rem;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  border-radius: 8px;
+}
+
 .viewMoreButton {
-	background:linear-gradient(to bottom, darken(#c7309c, 0%) 5%, darken(#c7309c, 2%) 100%);
-	background-color:darken(#6610f2, 10%);
-	border-radius:28px;
-	border:1px solid darken(#6610f2, 12%);
-	display:inline-block;
-	cursor:pointer;
-	color:white;
-	font-size:23px;
-	padding:30px 40px;
+	background: linear-gradient(to bottom, darken(#c7309c, 0%) 5%, darken(#c7309c, 2%) 100%);
+	background-color: darken(#6610f2, 10%);
+	border-radius: 28px;
+	border: 1px solid darken(#6610f2, 12%);
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-size: 1em;
+  font-weight: bold;
+	padding: 20px 60px;
 	text-decoration:none;
 }
 
 .viewMoreButton:hover {
-  background:linear-gradient(to bottom, darken(#c7309c, 5%) 5%, darken(#c7309c, 7%) 100%);
+  background: linear-gradient(to bottom, darken(#c7309c, 5%) 5%, darken(#c7309c, 7%) 100%);
   text-decoration: none;
   color: white;
 }
@@ -40,8 +53,16 @@ img {
     margin-top: 550px;
 }
 
+.spacer-section {
+  margin-top: 50px;
+}
+
+.spacer-special {
+  margin-top: 120px;
+}
+
 .spacer-xs {
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .spacer-xxs {
@@ -49,12 +70,17 @@ img {
 }
 
 .annotation {
-    font-size: 0.55em;
+    font-size: 0.55rem;
 }
 
 .copyright {
-    margin-top: 40px;
-    font-size: 0.55em;
+    color: rgba(255,255,255,.55);
+    font-size: 0.75rem;
+}
+
+.socials {
+  color: rgba(255,255,255,.55);
+  font-size: 2.25rem;
 }
 
 $breakpoint-alpha: 480px; // adjust to your needs
@@ -128,11 +154,11 @@ table {
   th, td {
     margin: .5em 1em;
     @media (min-width: $breakpoint-alpha) { 
-      padding: 1em !important; 
+      padding: 0.5em !important; 
     }
   }
   th, td:before {
-    color: #dd5;
+    color: white;
   }
 }
 

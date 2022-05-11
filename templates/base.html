@@ -98,7 +98,7 @@
               <Points ref="points" :position="{ z: -150 }">
                 <BufferGeometry :attributes="attributes" />
                 <ShaderMaterial :blending="2" :depth-test="false" :uniforms="uniforms" :vertex-shader="vertexShader" :fragment-shader="fragmentShader">
-                  <Texture src="img/sprite.png" uniform="uTexture" />
+                  <Texture src="/img/sprite.png" uniform="uTexture" />
                 </ShaderMaterial>
               </Points>
             </Scene>
@@ -263,7 +263,7 @@
         </div>
       </div>
     </nav>
-    <main class="container mx-auto my-5  animate__animated animate__fadeIn animate__delay-1s">
+    <main class="container mx-auto my-5 animate__animated animate__fadeIn animate__delay-1s">
       {% block content %}
       {% endblock %}
     </main>
@@ -271,7 +271,7 @@
     {% endblock %}
     {% if config.extra.email or config.extra.icons | length %}
     <footer class="
-      mt-auto p-5
+      mt-auto p-2
       bg-{{config.extra.bg}}
       text-center
       text-{% if nav_type == "dark" %}white{% else %}black{% endif %}
@@ -284,7 +284,7 @@
       >{{config.extra.email}}</a>
       {% endif %}
       {% if config.extra.icons | length %}
-      <div class="mt-2">
+      <div class="socials mt-2">
         {% for icon in config.extra.icons %}
           <a
             class="text-reset mx-1 bg-transparent animate__animated animate__bounceIn animate__delay-2s"
@@ -295,7 +295,7 @@
       </div>
       {% endif %}
 
-      <div class="copyright animate__animated animate__fadeIn animate__delay-3s">
+      <div class="copyright">
         <p>Copyright &copy; 2019-2022, The Eruption Development Team</p>
       </div>
     </footer>

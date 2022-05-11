@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://eruption-project.org/"
+base_url = "https://eruption-project.org"
 
 title = "Eruption"
 
@@ -49,6 +49,7 @@ icons = [
 links = [
 	{title = 'Devices', url = '/devices'},
 	{title = 'Gallery', url = '/gallery'},
+	{title = 'Blog', url = '/articles'},
 	{title = 'About', url = '/about'},
-    {title = 'Docs', url = 'https://github.com/X3n0m0rph59/eruption/tree/master/docs#table-of-contents'},
+    # {title = 'Docs', url = 'https://github.com/X3n0m0rph59/eruption/tree/master/docs#table-of-contents'},
 ]
