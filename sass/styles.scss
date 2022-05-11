@@ -18,6 +18,10 @@ h1,h2,h3,h4,h5,h6 {
   text-align: left !important;
 }
 
+h1 {
+  text-shadow: 0 0 20px lighten(#e60073, 90%), 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073 !important;
+}
+
 img {
     max-width: 98%;
 }
@@ -27,6 +31,7 @@ pre {
   padding-top: 0.45rem;
   padding-bottom: 1rem;
   border-radius: 8px;
+  opacity: 80%;
 }
 
 .viewMoreButton {
@@ -62,7 +67,7 @@ pre {
 }
 
 .spacer-xs {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .spacer-xxs {
@@ -87,7 +92,7 @@ $breakpoint-alpha: 480px; // adjust to your needs
 
 table {
   font-size: 0.75em;
-  margin: 1em 0;
+  margin: 1.25em 0;
   min-width: 100%; // adjust to your needs
 
   tr {
@@ -154,7 +159,7 @@ table {
   th, td {
     margin: .5em 1em;
     @media (min-width: $breakpoint-alpha) { 
-      padding: 0.5em !important; 
+      padding: 0.5em !important;
     }
   }
   th, td:before {

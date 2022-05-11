@@ -55,11 +55,11 @@ Eruption consists of a core daemon with an integrated Lua interpreter, and addit
 
 #### Installation
 
-<div class="spacer-section"></div>
+<br/>
 
 ##### Arch Linux and derivatives like ArcoLinux or Manjaro
 
-```shell
+```sh
 
 paru -Syu aur/eruption
 
@@ -73,7 +73,7 @@ sudo systemctl enable --now eruption.service
 
 ##### Fedora based
 
-```shell
+```sh
 
 sudo dnf copr enable x3n0m0rph59/eruption
 sudo dnf install eruption
@@ -88,7 +88,7 @@ sudo systemctl enable --now eruption.service
 
 ##### Ubuntu or Pop!_OS
 
-```shell
+```sh
 
 sudo add-apt-repository ppa:x3n0m0rph59/eruption
 sudo apt update
@@ -104,7 +104,7 @@ sudo systemctl enable --now eruption.service
 
 ##### From Source
 
-```shell
+```sh
 
 git clone https://github.com/X3n0m0rph59/eruption.git
 cd eruption
@@ -115,7 +115,7 @@ make start
 
 To remove Eruption from your system run:
 
-```shell
+```sh
 
 make stop
 sudo make uninstall
