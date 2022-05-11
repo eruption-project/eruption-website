@@ -7,31 +7,30 @@ author = "X3n0m0rph59"
 date = 2022-05-11
 +++
 
-Eruption is a Linux daemon written in the Rust programming language.
+Eruption consists of a core daemon providing an integrated Lua interpreter and additional plugin components. Its primary usage is to execute Lua scripts that may react to certain **events** on the system like e.g. _Timer tick_, _Key pressed_ or _Mouse moved_ and subsequently control the connected **devices** and transform the user input via the integrated **programmable macro** feature.
 
-Eruption consists of a core daemon with an integrated Lua interpreter, and additional plugin components. Its intended usage is to execute Lua scripts that may react to certain events on the system like e.g. Timer tick, Key pressed or Mouse moved and subsequently control the connected LED devices and/or transform the user input via the integrated programmable macro feature.
+#### Features in a Nutshell
 
-#### Features Overview
+* Various LED effects available, including a **Spectrum Analyzer** and a **VU-Meter**
+* Ambient effect via **Network FX** client (**X11 screen's** **contents** displayed on the keyboard)
+* Effects are implemented as **Lua scripts** running inside of **Lua VMs**
+* **Lua support library** written in **Rust** (Math, color handling, noise functions, etc...)
+* Multiple effects and macro **Lua scripts** are combined to a single **profile**
+* **Profiles** may change configuration parameters of **Lua scripts** (e.g.: Colors, timing parameters)
+* A **profile** can be assigned to one of **four slots**
+* **Macro keys** are supported and **freely programmable** via Lua functions
+* Up to **6** freely configurable and switchable **macro layers**
+* Packages available for: **Arch Linux**, **Ubuntu**, **Fedora**
+* License: **GPL3+**
 
-* Integrated Lua interpreter
-* LED Control via Lua scripts
-* Macros via Lua scripts
-* Multiple Lua scripts may be executed in parallel, with their outputs and effects combined
-* Allows for construction of complex "effect pipelines"
-* Event-based architecture
-* Daemon plugins may export functions to Lua
-* Profiles may be switched at runtime via a D-Bus method
-* A GNOME based profile switcher extension is available
-
-
-<div class="spacer-xxs"></div>
+<div class="spacer-section"></div>
 
 <div class="d-flex justify-content-center">
     <a class="viewMoreButton animate__animated animate__fadeInDown animate__delay-4s" onclick="document.getElementById('player').scrollIntoView(false);">View Demo Video</a>
 </div>
 
 
-<div class="spacer-xs"></div>
+<div class="spacer-special"></div>
 
 <div>
     <iframe id="ytplayer" type="text/html" width="100%" height="720px"
@@ -39,21 +38,19 @@ Eruption consists of a core daemon with an integrated Lua interpreter, and addit
     frameborder="0"></iframe>
 </div>
 
-<div id="player"  class="spacer-special"></div>
-
+<div id="player" class="spacer-special"></div>
 
 <div class="spacer-xs"></div>
 
 #### System requirements
 
-* What does Eruption need to run?
+Q: What does Eruption require to run?
 
-
-  Some of the profiles require a CPU built later than 2015 with support for SIMD/AVX2
+A: Some of the profiles require a CPU built **later than 2015** with support for **SIMD/AVX2**
 
 <div class="spacer-xs"></div>
 
-#### Installation
+# Installation
 
 <br/>
 
@@ -102,7 +99,7 @@ sudo systemctl enable --now eruption.service
 
 <div class="spacer-section"></div>
 
-##### From Source
+##### Build from Source
 
 ```sh
 
@@ -124,11 +121,9 @@ sudo make uninstall
 Please refer to [INSTALL.md](https://github.com/X3n0m0rph59/eruption/blob/master/docs/INSTALL.md) for further information, e.g. the dependencies you need to install to be
 able to successfully build Eruption from source.
 
----
-
 <div class="spacer-section"></div>
 
-#### After Setup
+#### After the Setup
 
 You may want to try the [Eruption Profile Switcher](https://extensions.gnome.org/extension/2621/eruption-profile-switcher/)
-GNOME Shell extension that enables easy switching of profiles on the fly
+GNOME Shell extension that enables easy switching of profiles on the fly!

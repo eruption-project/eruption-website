@@ -43,7 +43,7 @@ date = 2022-05-11
 <p class="annotation">
 * This feature is not supported/endorsed by the OEM and may be subject to change.
 </p>
- 
+
 <p class="annotation">
 ¹ Only supported via the profile switching mechanism
 </p>
@@ -67,12 +67,14 @@ Angle snapping: stabilize pointer movement, DCU: Distance Control Unit settings
 
 <div class="spacer-xs"></div>
 
-### Enabling `experimental` drivers
+### Enabling experimental drivers
 
-Experimental drivers are `disabled` in the default configuration!
+Experimental drivers are **disabled** in the default configuration. To enable support for experimental drivers, please edit the configuration file
+`/etc/eruption/eruption.conf` and set the following value:
 
-To enable support for experimental drivers, please edit `/etc/eruption/eruption.conf` and set
 ```toml
+
+[global]
 driver_maturity_level = "experimental"
 ```
 

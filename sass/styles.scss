@@ -1,3 +1,5 @@
+$breakpoint-alpha: 480px; // adjust to your needs
+
 html {
     // height: 100%;
     width: 100%;
@@ -9,9 +11,11 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 
-    hyphens: auto !important;
-    text-align: justify !important;
-    text-align-last: none !important;
+    @media (min-width: $breakpoint-alpha) {
+      hyphens: auto !important;
+      text-align: justify !important;
+      text-align-last: none !important;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -26,6 +30,16 @@ img {
     max-width: 98%;
 }
 
+em {
+  color: white;
+  font-variant: all-petite-caps;
+}
+
+strong {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
 pre {
   padding: 1.25rem;
   padding-top: 0.45rem;
@@ -35,6 +49,12 @@ pre {
 }
 
 .viewMoreButton {
+  opacity: 80%;
+
+  hyphens: none !important;
+  text-align: center !important;
+  text-align-last: none !important;
+
 	background: linear-gradient(to bottom, darken(#c7309c, 0%) 5%, darken(#c7309c, 2%) 100%);
 	background-color: darken(#6610f2, 10%);
 	border-radius: 28px;
@@ -75,7 +95,10 @@ pre {
 }
 
 .annotation {
-    font-size: 0.55rem;
+   font-size: 0.65rem;
+ 	 color: rgba(255,255,255,.55);
+   margin-top: 0.25rem;
+   margin-bottom: 0rem;
 }
 
 .copyright {
@@ -88,11 +111,15 @@ pre {
   font-size: 2.25rem;
 }
 
-$breakpoint-alpha: 480px; // adjust to your needs
 
 table {
-  font-size: 0.75em;
-  margin: 1.25em 0;
+  opacity: 80%;
+
+  font-size: 0.5rem;
+  @media (min-width: $breakpoint-alpha) {
+    font-size: 1rem;
+  }
+
   min-width: 100%; // adjust to your needs
 
   tr {
@@ -115,11 +142,11 @@ table {
     }
 
     &:before {
-      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      content: attr(data-th);
       font-weight: bold;
 
       // optional stuff to make it look nicer
-      width: 6.5em; // magic number :( adjust according to your own content
+      width: 8.5em; // magic number :( adjust according to your own content
       display: inline-block;
       // end options
 
@@ -150,15 +177,16 @@ table {
 
 table {
   background: darken(#6610f2, 10%);
-  color: #fff;
+  color: white;
   border-radius: .4em;
   overflow: hidden;
   tr {
     border-color: lighten(#34495E, 10%);
   }
   th, td {
-    margin: .5em 1em;
-    @media (min-width: $breakpoint-alpha) { 
+    margin: 1em 1em;
+
+    @media (min-width: $breakpoint-alpha) {
       padding: 0.5em !important;
     }
   }
@@ -168,7 +196,7 @@ table {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {

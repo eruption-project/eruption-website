@@ -31,7 +31,7 @@ date = 2022-05-11
   </a>
 
   <h4>Profile Switcher Extension</h4>
-  
+
   <a href="/img/screenshot-profile-switcher-01.jpg"
     data-pswp-width="353"
     data-pswp-height="546"
@@ -65,4 +65,3 @@ lightbox.init();
 </script>
 
 <link rel="stylesheet" href="/css/photoswipe.css">
-
