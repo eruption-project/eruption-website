@@ -15,14 +15,126 @@ body {
 
 img {
     max-width: 98%;
-
-    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1.45s;
 }
 
-// body, #app {
-//     background: transparent !important;
-// }
+.viewMoreButton {
+	background:linear-gradient(to bottom, darken(#c7309c, 0%) 5%, darken(#c7309c, 2%) 100%);
+	background-color:darken(#6610f2, 10%);
+	border-radius:28px;
+	border:1px solid darken(#6610f2, 12%);
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-size:23px;
+	padding:30px 40px;
+	text-decoration:none;
+}
+
+.viewMoreButton:hover {
+  background:linear-gradient(to bottom, darken(#c7309c, 5%) 5%, darken(#c7309c, 7%) 100%);
+  text-decoration: none;
+  color: white;
+}
+
+.spacer {
+    margin-top: 550px;
+}
+
+.spacer-xs {
+    margin-top: 150px;
+}
+
+.spacer-xxs {
+  margin-top: 90px;
+}
+
+.annotation {
+    font-size: 0.55em;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 0.55em;
+}
+
+$breakpoint-alpha: 480px; // adjust to your needs
+
+table {
+  font-size: 0.75em;
+  margin: 1em 0;
+  min-width: 100%; // adjust to your needs
+
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!
+  }
+
+  td {
+    display: block;
+
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+
+  th, td {
+    text-align: left;
+
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+}
+
+table {
+  background: darken(#6610f2, 10%);
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten(#34495E, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+  }
+  th, td:before {
+    color: #dd5;
+  }
+}
 
 ::-webkit-scrollbar {
     width: 12px;

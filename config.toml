@@ -1,6 +1,8 @@
 # The URL the site will be built for
 base_url = "https://x3n0m0rph59.github.io/eruption"
 
+title = "Eruption"
+
 theme = "zolastrap"
 
 taxonomies = [
@@ -21,6 +23,7 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -30,11 +33,20 @@ highlight_code = true
 # Put all your custom variables here
 theme = "vapor"
 bg = "dark"
+
+# banner = "/img/banner.jpeg"
+
 themes = []
 schemes = []
 
+# email = "x3n0m0rph59@gmail.com"
+
+icons = [
+  {title = 'GitHub', icon = 'github', url = 'https://github.com/X3n0m0rph59/eruption/'},
+  {title = 'YouTube', icon = 'youtube', url = 'https://www.youtube.com/channel/UCtveiMTiuH4tRJNljY763uA'}
+]
+
 links = [
-	{title = 'Home', url = '/'},
 	{title = 'Devices', url = '/devices'},
 	{title = 'Gallery', url = '/gallery'},
 	{title = 'About', url = '/about'},
