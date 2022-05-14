@@ -35,7 +35,7 @@ Eruption consists of a core daemon providing an integrated Lua interpreter and a
 
 <div class="scroll-reveal">
     <iframe id="ytplayer" type="text/html" width="100%" height="720px"
-    src="https://www.youtube.com/embed/ig_71zg14nQ?autoplay=1&origin=https://eruption-website.vercel.app/"
+    src="https://www.youtube.com/embed/ig_71zg14nQ?autoplay=1&origin=https://eruption-project.org/"
     frameborder="0"></iframe>
 </div>
 
