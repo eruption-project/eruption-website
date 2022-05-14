@@ -1,5 +1,5 @@
 +++
-title = "Realtime RGB LED Software for Linux"
+title = "Realtime RGB LED Driver for Linux"
 slug = "landing"
 paginate_by = 5
 weight = 0
