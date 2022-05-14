@@ -7,12 +7,14 @@ author = "X3n0m0rph59"
 date = 2022-05-11
 +++
 
-Eruption consists of a core daemon providing an integrated Lua interpreter and additional plugin components. Its primary usage is to execute Lua scripts that may react to certain **events** on the system like e.g. _Timer tick_, _Key pressed_ or _Mouse moved_ and subsequently control the connected **devices** and transform the user input via the integrated **programmable macro** feature.
+**What is Eruption?**
+
+Eruption consists of a core daemon providing an integrated Lua interpreter and additional plugin components. Its primary usage is to execute Lua scripts that may react to certain **events** on the system like e.g. `Timer tick`, `Key press` or `Mouse move` and subsequently control the connected **devices** and transform the user input via the integrated **programmable macro** feature.
 
 #### Features in a Nutshell
 
-* Various LED effects available, including a **Spectrum Analyzer** and a **VU-Meter**
-* Ambient effect via **Network FX** client (**X11 screen's** **contents** displayed on the keyboard)
+* **Various LED effects** available, including a **Spectrum Analyzer** and a **VU-Meter**
+* **Ambient effect** via **Network FX** client (**X11 screen's** **contents** displayed on the keyboard)
 * Effects are implemented as **Lua scripts** running inside of **Lua VMs**
 * **Lua support library** written in **Rust** (Math, color handling, noise functions, etc...)
 * Multiple effects and macro **Lua scripts** are combined to a single **profile**
@@ -23,16 +25,15 @@ Eruption consists of a core daemon providing an integrated Lua interpreter and a
 * Packages available for: **Arch Linux**, **Ubuntu**, **Fedora**
 * License: **GPL3+**
 
-<div class="spacer-section"></div>
+<div class="spacer-button"></div>
 
 <div class="d-flex justify-content-center">
     <a class="viewMoreButton animate__animated animate__fadeInDown animate__delay-4s" onclick="document.getElementById('player').scrollIntoView(false);">View Demo Video</a>
 </div>
 
+<div class="spacer-padding"></div>
 
-<div class="spacer-special"></div>
-
-<div>
+<div class="scroll-reveal">
     <iframe id="ytplayer" type="text/html" width="100%" height="720px"
     src="https://www.youtube.com/embed/ig_71zg14nQ?autoplay=1&origin=https://eruption-website.vercel.app/"
     frameborder="0"></iframe>
@@ -40,13 +41,13 @@ Eruption consists of a core daemon providing an integrated Lua interpreter and a
 
 <div id="player" class="spacer-special"></div>
 
-<div class="spacer-xs"></div>
+<div class="spacer-padding"></div>
 
 #### System requirements
 
-Q: What does Eruption require to run?
+What does Eruption require to run?
 
-A: Some of the profiles require a CPU built **later than 2015** with support for **SIMD/AVX2**
+Some of the **profiles** require a CPU built **later than 2015** with support for **SIMD/AVX2**
 
 <div class="spacer-xs"></div>
 

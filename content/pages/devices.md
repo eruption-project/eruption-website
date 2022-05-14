@@ -1,5 +1,5 @@
 +++
-title = "Supported Devices"
+title = "Device Compatibility"
 path = "devices"
 slug = "devices"
 paginate_by = 5
@@ -8,7 +8,7 @@ author = "X3n0m0rph59"
 date = 2022-05-11
 +++
 
-### Keyboard Devices
+### Keyboards
 
 | Vendor  | Product                | Status                     | Macro Keys | Easy Shift Key | Switch Profiles via F1-F4 Keys | Special functions via F5-F8 Keys    | Media keys F9-F12 |
 | ------- |------------------------| -------------------------- | ---------- | -------------- | ------------------------------ | ----------------------------------- | ----------------- |
@@ -23,7 +23,7 @@ date = 2022-05-11
 
 <div class="spacer-xs"></div>
 
-### Mouse Devices
+### Mice
 
 | Vendor | Product              | Status | Profiles | DPI  | Poll Rate | Debounce | Angle snapping | DCU | Macro Keys | Easy Shift Key |
 | ------ |----------------------| ------ | -------- | ---- | --------- | -------- | -------------- | --- | ---------- | -------------- |
@@ -67,9 +67,9 @@ Angle snapping: stabilize pointer movement, DCU: Distance Control Unit settings
 
 <div class="spacer-xs"></div>
 
-### Enabling experimental drivers
+### Enabling Experimental Drivers
 
-Experimental drivers are **disabled** in the default configuration. To enable support for experimental drivers, please edit the configuration file
+**Experimental** drivers are **disabled** in the default configuration. To enable support for experimental drivers, please edit the configuration file
 `/etc/eruption/eruption.conf` and set the following value:
 
 ```toml

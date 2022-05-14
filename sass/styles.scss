@@ -20,6 +20,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   text-align: left !important;
+  color: whitesmoke;
 }
 
 h1 {
@@ -78,20 +79,28 @@ pre {
     margin-top: 550px;
 }
 
+.spacer-button {
+  margin-top: 30px;
+}
+
 .spacer-section {
   margin-top: 50px;
 }
 
+.spacer-padding {
+  margin-top: 200px;
+}
+
 .spacer-special {
-  margin-top: 120px;
+  margin-top: 140px;
 }
 
 .spacer-xs {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .spacer-xxs {
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 .annotation {
@@ -111,6 +120,9 @@ pre {
   font-size: 2.25rem;
 }
 
+.scroll-reveal {
+  visibility: hidden;
+}
 
 table {
   opacity: 80%;
