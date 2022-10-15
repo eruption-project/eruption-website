@@ -33,7 +33,7 @@ date = 2022-05-11
 | ROCCAT | Kain 2xx AIMO        | 80%    | No       | No   | No        | No       | No             | No  | N.a.       | N.a.           |
 | ROCCAT | Kone XP              | ??%    | Yes      | No   | No        | No       | No             | No  | N.a.       | N.a.           |
 | ROCCAT | Kone Pro             | ??%    | Yes      | No   | No        | No       | No             | No  | N.a.       | N.a.           |
-| ROCCAT | Kone Pro Air         | ??%    | No       | No   | No        | No       | No             | No  | N.a.       | N.a.           |
+| ROCCAT | Kone Pro Air         | 60%    | No       | No   | No        | No       | No             | No  | N.a.       | N.a.           |
 | ROCCAT | Kone Aimo            | 80%    | No       | No   | No        | No       | No             | No  | N.a.       | N.a.           |
 | ROCCAT | Kone Aimo Remastered | 80%    | No       | No   | No        | No       | No             | No  | N.a.       | N.a.           |
 | ROCCAT | Kova AIMO            | 80%    | No       | No   | No        | No       | No             | No  | N.a.       | N.a.           |

@@ -9,7 +9,7 @@ date = 2022-05-11
 
 **What is Eruption?**
 
-Eruption consists of a core daemon providing an integrated Lua interpreter and additional plugin components. Its primary usage is to execute Lua scripts that may react to certain **events** on the system like e.g. `Timer tick`, `Key press` or `Mouse move` and subsequently control the connected **devices** and transform the user input via the integrated **programmable macro** feature.
+Eruption consists of a core daemon providing an integrated **Lua interpreter** and additional plugin components. Its primary usage is to execute Lua scripts that may react to certain **events** on the system like e.g. `Timer tick`, `Key press` or `Mouse move` and subsequently control the connected **devices** and transform the user input via the integrated **programmable macro** feature.
 
 #### Features in a Nutshell
 
