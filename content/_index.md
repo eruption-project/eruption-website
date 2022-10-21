@@ -49,6 +49,8 @@ What does Eruption require to run?
 
 Some of the **profiles** require a CPU built **later than 2015** with support for **SIMD/AVX2**
 
+<a id="installation">
+
 <div class="spacer-xs"></div>
 
 # Installation
@@ -57,8 +59,7 @@ Some of the **profiles** require a CPU built **later than 2015** with support fo
 
 ##### Arch Linux and derivatives like ArcoLinux or Manjaro
 
-```sh
-
+```bash
 paru -Syu aur/eruption
 
 systemctl --user enable --now eruption-audio-proxy.service
@@ -71,8 +72,7 @@ sudo systemctl enable --now eruption.service
 
 ##### Fedora based
 
-```sh
-
+```bash
 sudo dnf copr enable x3n0m0rph59/eruption
 sudo dnf install eruption
 
@@ -86,8 +86,7 @@ sudo systemctl enable --now eruption.service
 
 ##### Ubuntu or Pop!_OS
 
-```sh
-
+```bash
 sudo add-apt-repository ppa:x3n0m0rph59/eruption
 sudo apt update
 sudo apt install eruption
@@ -102,8 +101,7 @@ sudo systemctl enable --now eruption.service
 
 ##### Build from Source
 
-```sh
-
+```bash
 git clone https://github.com/X3n0m0rph59/eruption.git
 cd eruption
 make
@@ -113,8 +111,7 @@ make start
 
 To remove Eruption from your system run:
 
-```sh
-
+```bash
 make stop
 sudo make uninstall
 ```

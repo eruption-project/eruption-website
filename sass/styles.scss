@@ -1,34 +1,41 @@
 $breakpoint-alpha: 480px; // adjust to your needs
 
 html {
-    // height: 100%;
-    width: 100%;
+  margin: 0;
+  padding: 0;
 
-    font-size: 1.35rem;
+  // height: 100%;
+  width: 100%;
+
+  font-size: 1.35rem;
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
 
-    @media (min-width: $breakpoint-alpha) {
-      hyphens: auto !important;
-      text-align: justify !important;
-      text-align-last: none !important;
-    }
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  @media (min-width: $breakpoint-alpha) {
+    hyphens: auto !important;
+    text-align: justify !important;
+    text-align-last: none !important;
+  }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: left !important;
   color: whitesmoke;
 }
 
 h1 {
   text-shadow: 0 0 20px lighten(#e60073, 90%), 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073 !important;
-}
-
-img {
-    max-width: 98%;
 }
 
 em {
@@ -56,17 +63,17 @@ pre {
   text-align: center !important;
   text-align-last: none !important;
 
-	background: linear-gradient(to bottom, darken(#c7309c, 0%) 5%, darken(#c7309c, 2%) 100%);
-	background-color: darken(#6610f2, 10%);
-	border-radius: 28px;
-	border: 1px solid darken(#6610f2, 12%);
-	display: inline-block;
-	cursor: pointer;
-	color: white;
-	font-size: 1em;
+  background: linear-gradient(to bottom, darken(#c7309c, 0%) 5%, darken(#c7309c, 2%) 100%);
+  background-color: darken(#6610f2, 10%);
+  border-radius: 28px;
+  border: 1px solid darken(#6610f2, 12%);
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
   font-weight: bold;
-	padding: 20px 60px;
-	text-decoration:none;
+  padding: 20px 60px;
+  text-decoration: none;
 }
 
 .viewMoreButton:hover {
@@ -76,7 +83,7 @@ pre {
 }
 
 .spacer {
-    margin-top: 550px;
+  margin-top: 550px;
 }
 
 .spacer-button {
@@ -84,7 +91,7 @@ pre {
 }
 
 .spacer-section {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .spacer-padding {
@@ -96,7 +103,7 @@ pre {
 }
 
 .spacer-xs {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .spacer-xxs {
@@ -104,19 +111,19 @@ pre {
 }
 
 .annotation {
-   font-size: 0.65rem;
- 	 color: rgba(255,255,255,.55);
-   margin-top: 0.25rem;
-   margin-bottom: 0rem;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, .55);
+  margin-top: 0.25rem;
+  margin-bottom: 0rem;
 }
 
 .copyright {
-    color: rgba(255,255,255,.55);
-    font-size: 0.75rem;
+  color: rgba(255, 255, 255, .55);
+  font-size: 0.75rem;
 }
 
 .socials {
-  color: rgba(255,255,255,.55);
+  color: rgba(255, 255, 255, .55);
   font-size: 2.25rem;
 }
 
@@ -128,6 +135,7 @@ table {
   opacity: 80%;
 
   font-size: 0.5rem;
+
   @media (min-width: $breakpoint-alpha) {
     font-size: 1rem;
   }
@@ -149,6 +157,7 @@ table {
     &:first-child {
       padding-top: .5em;
     }
+
     &:last-child {
       padding-bottom: .5em;
     }
@@ -168,7 +177,8 @@ table {
     }
   }
 
-  th, td {
+  th,
+  td {
     text-align: left;
 
     @media (min-width: $breakpoint-alpha) {
@@ -192,38 +202,43 @@ table {
   color: white;
   border-radius: .4em;
   overflow: hidden;
+
   tr {
     border-color: lighten(#34495E, 10%);
   }
-  th, td {
+
+  th,
+  td {
     margin: 1em 1em;
 
     @media (min-width: $breakpoint-alpha) {
       padding: 0.5em !important;
     }
   }
-  th, td:before {
+
+  th,
+  td:before {
     color: white;
   }
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px #6f42c1;
-    -webkit-box-shadow: inset 0 0 6px #6f42c1;
-    border-radius: 10px;
+  box-shadow: inset 0 0 6px #6f42c1;
+  -webkit-box-shadow: inset 0 0 6px #6f42c1;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color:#6710f244;
-    box-shadow: inset 0 0 6px #6f42c1;
-    -webkit-box-shadow: inset 0 0 6px #6f42c1;
+  border-radius: 10px;
+  background-color: #6710f244;
+  box-shadow: inset 0 0 6px #6f42c1;
+  -webkit-box-shadow: inset 0 0 6px #6f42c1;
 }
 
 ::-webkit-scrollbar-corner {
-    background-color:transparent;
+  background-color: transparent;
 }

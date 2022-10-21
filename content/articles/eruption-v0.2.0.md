@@ -10,8 +10,6 @@ date = 2022-08-17
 ### Released Eruption v0.2.0
 
 [Eruption v0.2.0](https://github.com/X3n0m0rph59/eruption/releases/tag/v0.2.0)
-_X3n0m0rph59 released this 17 Aug 2022_ 
-
 
 - Add support for named color-schemes
 - Add support for importing pywal generated color-schemes via eruptionctl color-schemes import pywal

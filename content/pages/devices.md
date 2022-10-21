@@ -73,9 +73,14 @@ Angle snapping: stabilize pointer movement, DCU: Distance Control Unit settings
 `/etc/eruption/eruption.conf` and set the following value:
 
 ```toml
-
 [global]
 driver_maturity_level = "experimental"
+```
+
+After that, please restart the eruption daemon
+
+```bash
+sudo systemctl restart eruption.service
 ```
 
 <div class="spacer-xs"></div>
