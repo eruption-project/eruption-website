@@ -43,6 +43,29 @@ Eruption consists of a core daemon providing an integrated **Lua interpreter** a
 
 <div class="spacer-padding"></div>
 
+<div class="pswp-gallery pswp-gallery--single-column" id="my-gallery-1">
+  <h4>Eruption GUI</h4>
+
+  <a href="/img/screenshot-01.png"
+    data-pswp-width="1492"
+    data-pswp-height="881"
+    target="_blank">
+    <img src="/img/screenshot-01.png" alt="Eruption GUI - Keyboard devices" />
+  </a>
+  <a href="/img/screenshot-02.png"
+    data-pswp-width="1492"
+    data-pswp-height="881"
+    target="_blank">
+    <img src="/img/screenshot-02.png" alt="Eruption GUI - Mouse devices" />
+  </a>
+ <a href="/img/screenshot-03.png"
+    data-pswp-width="1492"
+    data-pswp-height="881"
+    target="_blank">
+    <img src="/img/screenshot-03.png" alt="Eruption GUI - Process Monitor" />
+  </a>
+</div> 
+
 #### System requirements
 
 What does Eruption require to run?
@@ -62,6 +85,7 @@ Some of the **profiles** require a CPU built **later than 2015** with support fo
 ```bash
 paru -Syu aur/eruption
 
+systemctl --user enable --now eruption-fx-proxy.service
 systemctl --user enable --now eruption-audio-proxy.service
 systemctl --user enable --now eruption-process-monitor.service
 
@@ -76,6 +100,7 @@ sudo systemctl enable --now eruption.service
 sudo dnf copr enable x3n0m0rph59/eruption
 sudo dnf install eruption
 
+systemctl --user enable --now eruption-fx-proxy.service
 systemctl --user enable --now eruption-audio-proxy.service
 systemctl --user enable --now eruption-process-monitor.service
 
@@ -91,6 +116,7 @@ sudo add-apt-repository ppa:x3n0m0rph59/eruption
 sudo apt update
 sudo apt install eruption
 
+systemctl --user enable --now eruption-fx-proxy.service
 systemctl --user enable --now eruption-audio-proxy.service
 systemctl --user enable --now eruption-process-monitor.service
 
@@ -124,4 +150,42 @@ able to successfully build Eruption from source.
 #### After the Setup
 
 You may want to try the [Eruption Profile Switcher](https://extensions.gnome.org/extension/2621/eruption-profile-switcher/)
-GNOME Shell extension that enables easy switching of profiles on the fly!
+GNOME 4x Shell extension that enables easy switching of profiles on the fly!
+
+<div class="pswp-gallery pswp-gallery--single-column" id="my-gallery-2">
+    <div>
+        <a href="/img/screenshot-profile-switcher-01.jpg"
+            data-pswp-width="353"
+            data-pswp-height="546"
+            target="_blank"
+            style="float:left">
+            <img src="/img/screenshot-profile-switcher-01.jpg" alt="Profile Switcher" />
+        </a>
+        <a href="/img/screenshot-profile-switcher-02.jpg"
+            data-pswp-width="435"
+            data-pswp-height="1080"
+            target="_blank"
+            style="float:left; margin-left:40px;">
+            <img src="/img/screenshot-profile-switcher-02.jpg" alt="Profile Switcher" />
+        </a>
+    </div>
+</div>
+
+<script type="module">
+import Lightbox from '/js/photoswipe/photoswipe-lightbox.esm.min.js';
+const lightbox1 = new Lightbox({
+  gallery: '#my-gallery-1',
+  children: 'a',
+  pswpModule: () => import('/js/photoswipe/photoswipe.esm.min.js')
+});
+lightbox1.init();
+
+const lightbox2 = new Lightbox({
+  gallery: '#my-gallery-2',
+  children: 'a',
+  pswpModule: () => import('/js/photoswipe/photoswipe.esm.min.js')
+});
+lightbox2.init();
+</script>
+
+<link rel="stylesheet" href="/css/photoswipe.css">
