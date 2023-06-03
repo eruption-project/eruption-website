@@ -1,13 +1,13 @@
 +++
-title = "Released Eruption v0.3.0"
-slug = "eruption-v0.3.0"
+title = "Released Eruption v0.3.4"
+slug = "eruption-v0.3.4"
 paginate_by = 5
 weight = 20
 author = "X3n0m0rph59"
 date = 2023-05-28
 +++
 
-### Released Eruption v0.3.0
+### Released Eruption v0.3.4
 
 [Eruption v0.3.4 on GitHub](https://github.com/X3n0m0rph59/eruption/releases/tag/v0.3.4)
 
