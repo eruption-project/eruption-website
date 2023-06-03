@@ -41,8 +41,8 @@ banner = "/img/banner.jpeg"
 # email = "x3n0m0rph59@gmail.com"
 
 icons = [
-    {title = 'GitHub', icon = 'github', url = 'https://github.com/X3n0m0rph59/eruption'},
-    {title = 'YouTube', icon = 'youtube', url = 'https://www.youtube.com/channel/UCtveiMTiuH4tRJNljY763uA'}
+    {title = 'GitHub', icon = 'github', url = 'https://github.com/eruption-project/eruption'},
+    {title = 'YouTube', icon = 'youtube', url = 'https://www.youtube.com/@eruption714'}
 ]
 
 links = [
@@ -52,8 +52,8 @@ links = [
     {title = 'Gallery', url = 'gallery'},
     {title = 'Blog', url = 'articles'},
     {title = 'About', url = 'about'},
-    {title = 'Docs', url = 'https://github.com/X3n0m0rph59/eruption/tree/master/docs#table-of-contents'},
-    {title = 'Issues', url = 'https://github.com/X3n0m0rph59/eruption/issues'},
+    {title = 'Docs', url = 'https://github.com/eruption-project/eruption/tree/master/docs#table-of-contents'},
+    {title = 'Issues', url = 'https://github.com/eruption-project/eruption/issues'},
 ]
 
 # [extra.show]

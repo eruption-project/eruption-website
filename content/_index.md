@@ -128,7 +128,7 @@ sudo systemctl enable --now eruption.service
 ##### Build from Source
 
 ```bash
-git clone https://github.com/X3n0m0rph59/eruption.git
+git clone https://github.com/eruption-project/eruption.git
 cd eruption
 make
 sudo make install
@@ -142,7 +142,7 @@ make stop
 sudo make uninstall
 ```
 
-Please refer to [INSTALL.md](https://github.com/X3n0m0rph59/eruption/blob/master/docs/INSTALL.md) for further information, e.g. the dependencies you need to install to be
+Please refer to [INSTALL.md](https://github.com/eruption-project/eruption/blob/master/docs/INSTALL.md) for further information, e.g. the dependencies you need to install to be
 able to successfully build Eruption from source.
 
 <div class="spacer-section"></div>
