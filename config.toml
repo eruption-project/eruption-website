@@ -2,7 +2,7 @@ base_url = "https://eruption-project.org/"
 
 title = "Eruption"
 theme = "zolastrap"
-# generate_feed = true
+generate_feed = true
 
 taxonomies = [
     # You can enable/disable RSS
