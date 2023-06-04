@@ -9,4 +9,5 @@ date = 2023-06-03
 
 ### The Eruption GitHub Organization has been created
 
-We just launched the new GitHub organization!
+Exciting news! We have just launched our brand new GitHub organization!
+Let's shape the future of the Eruption project together...
